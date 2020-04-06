@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                     echo "Multiline shell steps works too"
-                    cd /var/www
+                    cd ..
                     ls -lah
                 '''
             }
