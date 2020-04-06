@@ -6,6 +6,7 @@ pipeline {
                 sh '''
                     echo "Multiline shell steps works too"
                     cd ..
+                    pwd
                     ls -lah
                 '''
             }
