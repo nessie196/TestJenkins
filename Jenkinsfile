@@ -4,15 +4,13 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                    echo "Multiline shell steps works too"
                     pwd
                     whoami
-                    ls -lah
                     composer --version
+                    cd /var/www/test
                     composer install
                     cp .env.example .env
-                    cd /var/www/test
-                    ls -lah
+                    php artisan key:generate
                 '''
             }
         }
