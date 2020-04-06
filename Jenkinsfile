@@ -8,6 +8,7 @@ pipeline {
                     cd ..
                     pwd
                     ls -lah
+                    composer --version
                 '''
             }
         }
