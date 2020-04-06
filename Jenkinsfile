@@ -10,6 +10,8 @@ pipeline {
                     whoami
                     ls -lah
                     composer --version
+                    composer install
+                    cp .env.example .env
                     cd /var/www/test
                     ls -lah
                 '''
